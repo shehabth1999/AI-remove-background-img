@@ -12,7 +12,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/background-image-removal.git
+git clone https://github.com/shehabth1999/AI-remove-background-img
 Navigate to the project directory:
 arduino
 Copy code
