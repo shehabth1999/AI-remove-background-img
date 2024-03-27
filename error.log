@@ -1,0 +1,244 @@
+ERROR:django.request:Internal Server Error: /remove-pg/
+Traceback (most recent call last):
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\remove_bg_ai\rm_pg\views.py", line 23, in process_image
+    processed_image.result_image.save(processed_image.image.name, result)
+  File "D:\AI\venv\Lib\site-packages\django\db\models\fields\files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\storage\base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\storage\filesystem.py", line 110, in _save
+    for chunk in content.chunks():
+  File "D:\AI\venv\Lib\site-packages\django\core\files\base.py", line 60, in chunks
+    data = self.read(chunk_size)
+           ^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'read'
+ERROR:django.request:Internal Server Error: /remove-pg/
+Traceback (most recent call last):
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\remove_bg_ai\rm_pg\views.py", line 23, in process_image
+    processed_image.result_image.save(processed_image.image.name, result)
+  File "D:\AI\venv\Lib\site-packages\django\db\models\fields\files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\storage\base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\storage\filesystem.py", line 110, in _save
+    for chunk in content.chunks():
+  File "D:\AI\venv\Lib\site-packages\django\core\files\base.py", line 60, in chunks
+    data = self.read(chunk_size)
+           ^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'read'
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+Traceback (most recent call last):
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\remove_bg_ai\rm_pg\views.py", line 24, in process_image
+    processed_image.result_image.save(processed_image.image.name, result)
+  File "D:\AI\venv\Lib\site-packages\django\db\models\fields\files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\storage\base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\storage\filesystem.py", line 110, in _save
+    for chunk in content.chunks():
+  File "D:\AI\venv\Lib\site-packages\django\core\files\base.py", line 60, in chunks
+    data = self.read(chunk_size)
+           ^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'read'
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+ERROR:django.request:Internal Server Error: /remove-pg/
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+ERROR:django.request:Internal Server Error: /remove-pg/
+ERROR:django.request:Internal Server Error: /remove-pg/
+Traceback (most recent call last):
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\remove_bg_ai\rm_pg\views.py", line 22, in process_image
+    result = removebg.remove_background_from_img_file(processed_image.image.path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\removebg\removebg.py", line 31, in remove_background_from_img_file
+    response.raise_for_status()
+  File "D:\AI\venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.remove.bg/v1.0/removebg
+ERROR:django.request:Internal Server Error: /remove-pg/
+ERROR:django.request:Internal Server Error: /remove-pg/
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+Traceback (most recent call last):
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\AI\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\remove_bg_ai\rm_pg\views.py", line 25, in process_image
+    processed_image.result_image.save(processed_image.image.name, result)
+  File "D:\AI\venv\Lib\site-packages\django\db\models\fields\files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\storage\base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\storage\filesystem.py", line 110, in _save
+    for chunk in content.chunks():
+  File "D:\AI\venv\Lib\site-packages\django\core\files\base.py", line 60, in chunks
+    data = self.read(chunk_size)
+           ^^^^^^^^^
+  File "D:\AI\venv\Lib\site-packages\django\core\files\utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'read'
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\models.py changed, reloading.
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /images/images_wHq4ZMZ.jpg_no_bg.png
+WARNING:django.request:Not Found: /images/images_wHq4ZMZ.jpg_no_bg.png
+WARNING:django.request:Not Found: /media/images/images_wHq4ZMZ.jpg_no_bg.png
+WARNING:django.request:Not Found: /media/images/images_wHq4ZMZ.jpg_no_bg.png
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /media/images/images_wHq4ZMZ.jpg_no_bg.png
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+WARNING:django.request:Not Found: /media/images/images_wHq4ZMZ.jpg
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /remove-pg/
+INFO:django.utils.autoreload:D:\AI\remove_bg_ai\rm_pg\views.py changed, reloading.
