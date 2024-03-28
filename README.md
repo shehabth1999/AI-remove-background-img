@@ -46,4 +46,4 @@ Credits
 Remove.bg API: https://www.remove.bg/api
 Django: https://www.djangoproject.com/
 Contact
-For questions or inquiries, please contact your-email@example.com.
+For questions or inquiries, please contact shethr999@gmail.com.
